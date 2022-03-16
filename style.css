@@ -1,0 +1,41 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+header {
+    margin: 50px 100px;
+    border-top: solid 3px rgb(124, 124, 163);
+    padding-top: 10px;
+    
+          
+}
+span {
+    margin-left: 605px;
+    color: rgb(124, 124, 163); 
+}
+#capaimg {
+    background-color: rgb(177, 177, 177);
+    margin: 50px 100px;
+    text-align: center;
+    height: 414px;   
+}
+.areatext {
+    margin: 50px 100px;
+    text-align: justify;
+    font-size: 14px;
+}
+.areatit {
+    font-size: 18px;
+}
+.link {   
+   font-style: normal;
+   color: rgb(124, 124, 163);    
+    
+}
+footer{
+    text-align: center;
+    font-size: 11px;
+    font-weight: bolder;
+    font-style: italic;
+    margin-block-end: 10px;
+    
+}
