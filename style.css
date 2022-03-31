@@ -31,6 +31,9 @@ span {
    color: rgb(124, 124, 163);    
     
 }
+#descricao {
+    padding: 40px 480px;
+}
 footer{
     text-align: center;
     font-size: 11px;
