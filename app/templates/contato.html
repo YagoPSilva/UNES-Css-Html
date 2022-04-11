@@ -5,15 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contato</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 <body>
     <header>
-        <img src="Img/logo.png" alt="Logo UNES">
+        <img src="{{ url_for('static', filename='Img/logo.png') }}" alt="Logo UNES">
         <span>
-        <a href="Home.html" class="link">Home</a> |
-        <a href="QuemSomos.html" class="link">Quem Somos</a> |
-        <a href="Contato.html" class="link">Contato</a> 
+            <a href="index" class="link">Home</a> |
+            <a href="quemsomos" class="link">Quem Somos</a> |
+            <a href="contato" class="link">Contato</a> 
         </span>
     </header>
     <div class="areatext">
@@ -35,5 +35,7 @@
     </div>    
     <footer>Todos os direitos reservados</footer>
     
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>">
 </body>
 </html>

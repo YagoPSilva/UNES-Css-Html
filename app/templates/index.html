@@ -5,19 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UNES Home</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
 </head>
 <body>
     <header>
-        <img src="Img/logo.png" alt="Logo UNES">
+        <img src="{{ url_for('static', filename='Img/logo.png') }}" alt="Logo UNES">
         <span>
-        <a href="Home.html" class="link">Home</a> |
-        <a href="QuemSomos.html" class="link">Quem Somos</a> |
-        <a href="Contato.html" class="link">Contato</a> 
+            <a href="index" class="link">Home</a> |
+            <a href="quemsomos" class="link">Quem Somos</a> |
+            <a href="contato" class="link">Contato</a>  
         </span>
     </header>
     <div id="capaimg">
-        <img src="img/capa.png" alt="Imagem de capa">
+        <img src="{{ url_for('static', filename='Img/capa.png') }}" alt="Imagem de capa">
     </div>
     <div class="areatext">
         <h3 class="areatit">Sobre a universidade</h3>
@@ -26,5 +27,7 @@
     </div>
     <footer>Todos os direitos reservados</footer>
     
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>">
 </body>
 </html>
